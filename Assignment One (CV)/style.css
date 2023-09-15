@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lobster&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+body
+{
+    background: rgb(203, 195, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{   
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 1300px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1.75fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    margin: 100px;
+
+}
+.container .leftside
+{
+    position: relative;
+    background: #672d50;
+    padding: 40px;
+
+}
+.nameImage
+{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.nameImage h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.75em;
+    color: white;
+    
+}
+.nameImage span {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Source Sans 3';
+}
+.nameImage .image
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.nameImage .image img
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.contactme
+{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactme .text
+{
+    color: white;
+}
+
+.contactme ul li
+{
+    list-style: none ;
+}
+
+.myProfile
+{
+    margin-top: 20px;
+}
+.myProfile h3
+{
+    color:white;
+    font-size: 1.5em;
+}
+.myProfile p
+{
+    color:white;
+    margin-top: 10px;
+}
+.languages
+{
+   margin-top: 20px;
+}
+.languages h2
+{
+    color:white;
+}
+.languages .text
+{
+    color:white ;
+}
+.languages ul li
+{
+    list-style: none ;
+    margin-top: 10px;
+}
+.languages .percent
+{
+    width: 100%;
+    height: 6px;
+    display: block;
+    background: rgb(133, 64, 109) ;
+    margin-top: 5px;
+}
+.languages .percent div
+{
+    top:0;
+    left:0;
+    height: 100%;
+    background: #D99AA5;
+}
+.organization
+{
+    margin-top: 30px;
+    color: white;
+}
+.organization h4
+{
+    margin-top: 8px;
+}
+.organization p
+{
+    margin-top: 5px;
+}
+.container .rightside
+{
+    position: relative;
+    background: white;
+    padding: 40px;
+    color:#672d50
+
+}
+.education h4
+{
+    margin-top: 10px;
+}
+.education ul li{
+    margin-left: 18px;
+}
+.experience
+{
+    margin-top: 20px;
+}
+.experience h4{
+ margin-top: 10px;
+}
+.experience ul li
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Projects
+{
+    margin-top: 20px;
+}
+.Projects h4
+{
+    margin-top: 10px;
+}
+
+.Projects ul li
+{
+    margin-left: 20px;
+}
+.Skills
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.Skills ul li{
+    margin-left: 18px;
+    margin-top: 4px;
+}
+.extracurricular
+{
+    margin-top: 20px;
+    
+}
+.extracurricular ul li
+{
+    margin-left: 18px;
+    margin-top: 3px;
+}
