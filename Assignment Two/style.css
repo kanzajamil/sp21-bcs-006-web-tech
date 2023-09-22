@@ -1,0 +1,147 @@
+
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lobster&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #0B1C48 !important; 
+    align-items: center;
+    justify-content: center;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    font-family: Philosopher !important;
+}
+.navbar-brand {
+    color: white !important;
+    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    margin-right: 450px !important;
+    font-family: Philosopher;
+    font-weight: 700;
+}
+.navbar-brand img{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.navbar-nav .nav-link:active {
+    color: aqua !important ;
+}
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: 20px; 
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Adjust opacity as needed */
+  }
+  
+  .quote-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    animation: fade-in-out 5s infinite;
+     /* Adjust animation duration as needed */
+}
+
+.quote-text {
+    font-size: 70px; /* Adjust the font size as needed */
+    color: white;
+    margin: 0; 
+    line-height: 1.2;
+    font-family: 'Philosopher';
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    opacity: 0;/* Add vertical spacing between quotes */
+    
+
+    
+}
+
+@keyframes fade-in-out {
+    0%, 100% {
+        opacity: 0;
+    }
+    20%, 80% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.cube {
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Adjust the height */
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+}
+
+.face {
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Adjust the height */
+    position: absolute;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* Adjust the font size */
+    background-color: rgba(32, 28, 148, 0.8);
+}
+
+.front  { transform: translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.right  { transform: rotateY(90deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.top    { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(50deg) rotateX(0deg);
+    }
+    25% {
+        transform: rotateY(90deg) rotateX(180deg);
+    }
+    50% {
+        transform: rotateY(180deg) rotateX(0deg);
+    }
+    75% {
+        transform: rotateY(270deg) rotateX(180deg);
+    }
+    100% {
+        transform: rotateY(360deg) rotateX(0deg);
+    }
+}
+
