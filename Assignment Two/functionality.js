@@ -29,31 +29,14 @@ function animateQuotes() {
     }
 }
 
-// Start the animation immediately when the page loads
-animateQuotes(); // Call the function to show the first quote
 
-// Continue the animation with the specified interval
+animateQuotes(); 
+
 setInterval(animateQuotes, 5000); 
 
 
 
-// Get references to elements
-/*const videoContainer = document.querySelector('.video-container');
-const section2 = document.querySelector('.section2');
 
-// Function to handle scroll event
-function handleScroll() {
-    const scrollY = window.scrollY;
-
-    // Calculate the translation for section2 based on scroll position
-    const section2Translation = -scrollY * 0.3; // Adjust the factor as needed
-
-    // Apply the translation to section2
-    section2.style.transform = `translateY(${section2Translation}px)`;
-}
-
-// Attach scroll event listener
-window.addEventListener('scroll', handleScroll);*/
 
 
 
