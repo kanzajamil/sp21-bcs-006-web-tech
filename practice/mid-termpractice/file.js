@@ -7,6 +7,16 @@ window.addEventListener("scroll", function() {
   }
 });
 
+// Get a reference to the logo element by its ID
+var logo = document.getElementById("logo");
+
+// Add an onclick event handler to the logo
+logo.onclick = function() {
+    
+    alert("SP21-BCS-006, KANZA JAMIL");
+};
+
+
 
 let slideIndex = 1;
 showSlides(slideIndex);
