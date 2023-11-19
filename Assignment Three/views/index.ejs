@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.142.0/build/three.module.js",
+            "stats": "https://unpkg.com/stats-js@1.0.1/src/Stats.js"
+            }
+        }
+        </script>
+    <script type="module" src= "/js/3dGlobe.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Logistics</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+    <%- include('./partials/top-menu') %>
+    <div class="video-container">
+        <video autoplay loop muted>
+          <source src="/Assets/img/Video2.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="quote-container">
+            <p class="quote-text">Your Cargo, Our Expertise</p>
+        </div>
+        <div class="quote-container">
+            <p class="quote-text">Quality Logistic Services</p>
+        </div>
+        <div class="quote-container">
+            <p class="quote-text">Cost Effective with <br> On-Time Delivery</p>
+        </div>
+        <div class="quote-container">
+            <p class="quote-text">Boost Profit, <br> Partner with Vision Logistics</p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none" class="section-divider">
+            <path fill="#0B1C48" d="M0 20 
+                Q10 5 20 20 
+                Q30 35 40 20 
+                Q50 5 60 20 
+                Q70 35 80 20 
+                Q90 5 100 20 
+                V40 H0 Z" />
+        </svg>
+        
+        
+        
+        
+    </div>
+    
+    <div class="section2">
+        
+        <div class="slogan">
+            <h1>LET THE PROFESSIONALS TAKE OVER!</h1>
+            <p> " With years of expertise in the logistics industry, we specialize in seamless solutions for ocean freight, air freight, brokerage, and more. Our dedicated team of professionals understands the complexities of global shipping, ensuring that your cargo arrives safely well on time to meet your production deadlines. We pride ourselves on our commitment to excellence, reliability, and customer satisfaction. Let us handle the logistics while you focus on what matters most – growing your business. Discover the peace of mind that comes with entrusting your shipments to Vision Logistics, where professionalism meets efficiency, and your success is our priority. "</p>
+        </div>
+        <div class="globe-container" ></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none" class="section-divider2">
+            <path fill="#ebf5fc" d="M0 20 
+                Q10 5 20 20 
+                Q30 35 40 20 
+                Q50 5 60 20 
+                Q70 35 80 20 
+                Q90 5 100 20 
+                V40 H0 Z" />
+        </svg>
+
+    </div>
+    <div class="Section3">
+        <h1 class="Services">OUR SERVICES</h1>
+        <div class="container">
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/Assets/img/air2.png" alt="Air Freight"/>
+                        <div class="overlay2"></div>
+                        <div class="text-overlay">
+                            <h3>Air Freight</h3>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Air Freight</h3>
+                        <p>"For quick and reliable cargo transport, choose our air freight solutions. We prioritize speed and efficiency for urgent shipments worldwide. Trust us for rapid, secure, hassle-free deliveries. Count on us to meet your tight deadlines with precision."</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/Assets/img/ocean1.jpeg" alt="Ocean Freight"/>
+                        <div class="overlay2"></div>
+                        <div class="text-overlay">
+                            <h3>Ocean Freight</h3>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Ocean Freight</h3>
+                        <p>"Unlock global trade with our cost-effective and reliable ocean freight services. We ensure smooth cargo transport via sea routes, guaranteeing timely deliveries and secure handling. Rely on us as your go-to choice for international shipping."</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/Assets/img/customw.jpg" alt="Ocean Freight"/>
+                        <div class="overlay2"></div>
+                        <div class="text-overlay">
+                            <h3>Custom Brokerage</h3>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Custom Brokerage</h3>
+                        <p>We offer customs clearance for air & sea shipments, handling Import Bonds, Cheques, & temporary importation schemes. Our expert advice on custom laws simplifies international trade, including L/C opening and contracts, ensuring smooth operations.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/Assets/img/project.jpg" alt="Ocean Freight"/>
+                        <div class="overlay2"></div>
+                        <div class="text-overlay">
+                            <h3>Project Handling</h3>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Project Handling</h3>
+                        <p>Our expert team excels at project logistics. From planning to execution, we ensure efficient coordination of transportation and warehousing, delivering on time and within budget for your unique project requirements. Your project's success is our priority.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/Assets/img/consoli.jpg" alt="Ocean Freight"/>
+                        <div class="overlay2"></div>
+                        <div class="text-overlay">
+                            <h3>Freight Consolidation</h3>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Freight Consolidation</h3>
+                        <p>Our service combines your shipments into one lot & under a single invoice for simplicity & cost savings. Benefit from our efficient & timely consolidation services, which include traceability & tracking capabilities.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/Assets/img/ware.jpg" alt="Ocean Freight"/>
+                        <div class="overlay2"></div>
+                        <div class="text-overlay">
+                            <h3>Warehousing & Distribution</h3>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Warehousing & Distribution</h3>
+                        <p>Our warehousing & distribution service can streamline your supply chain & boost your business. We offer complete solutions, managing everything from storage to efficient order fulfillment, guaranteeing precision & customer satisfaction</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none" class="section-divider3">
+            <path fill="#0B1C48" d="M0 20 
+                Q10 5 20 20 
+                Q30 35 40 20 
+                Q50 5 60 20 
+                Q70 35 80 20 
+                Q90 5 100 20 
+                V40 H0 Z" />
+        </svg>
+      </div>
+      <div class="section4">
+        <div class="inner">
+            <div class="image">
+                <img src="/Assets/img/call.png" alt="Call center"/>
+            </div>
+            <div class="slogan2">
+                <h1>Streamline Your Logistics </h1>
+                <p> Since our establishment in 2001, we have been at the forefront of the industry, specializing in air freight, sea freight, freight consolidation, warehousing, and distribution. <br> Our commitment to delivering tailored solutions and outstanding service is unmatched. <br> Ready to optimize your logistics operations? Click below to get a quote and take the first step towards a more efficient and cost-effective supply chain.</p>
+                <a href="#">Get A Qoute</a>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none" class="divider4">
+            <path fill="white" d="M0 20 
+                Q10 5 20 20 
+                Q30 35 40 20 
+                Q50 5 60 20 
+                Q70 35 80 20 
+                Q90 5 100 20 
+                V40 H0 Z" />
+        </svg>
+
+        </div>
+        <div class="section5">
+            <h1>Accreditations</h1>
+            <div class="logos">
+                <img src="/Assets/img/iataa.png" alt="Iata logo"/>
+                <img src="/Assets/img/fiata.png" alt="fiata logo"/>
+                <img src="/Assets/img/jcilo.jpg" alt="jcilo logo"/>
+                <img src="/Assets/img/piffaa.png" alt="piffa logo"/>
+                <img src="/Assets/img/acaap.png" alt="acaap logo"/>
+                <img src="/Assets/img/LCCI.jpg" alt="lcci logo"/>
+                <img src="/Assets/img/2.png" alt="america allaince logo"/>
+                <img src="/Assets/img/mill.png" alt="mill logo"/>
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" preserveAspectRatio="none" class="divider4">
+                <path fill="#0B1C48" d="M0 20 
+                    Q10 5 20 20 
+                    Q30 35 40 20 
+                    Q50 5 60 20 
+                    Q70 35 80 20 
+                    Q90 5 100 20 
+                    V40 H0 Z" />
+            </svg>
+        </div>
+        <footer class="footer-01">
+			<div class="containerlast">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading with-line">Vision Logistics</h2>
+						<p>Your trusted partner for seamless international freight solutions, dedicated to ensuring your cargo reaches its destination safely, on time, every time, with exceptional service and reliability.</p>
+						<ul class="ftco-footer-social p-0">
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="circle-icon" style="font-size:20px; color:white; margin-bottom: -20px; "></i></a></li>
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="circle-icon" style="font-size:20px; color:white; align-self: center;"></i></a></a></li>
+                            <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="circle-icon" style="font-size:20px; color:white; align-self: center;"></i></a></a></li>
+                        </ul>
+					</div>
+			
+					<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+						<h2 class="footer-heading with-line">Quick Links</h2>
+						<ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Home</a></li>
+                            <li><a href="#" class="py-2 d-block">About</a></li>
+                            <li><a href="#" class="py-2 d-block">Services</a></li>
+                            <li><a href="#" class="py-2 d-block">News & Updates</a></li>
+                            <li><a href="#" class="py-2 d-block">Contact</a></li>
+                        </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading3 with-line">Have a Question?</h2>
+						<div class="block-23 mb-3">
+                            <ul class="custom-list">
+                                <li><i class="fa fa-map-marker" style="font-size:20px; color:white; margin-right: 10px;"></i></span><span class="text">Suite # 14, 2nd Floor, Central Plaza, 3 Civic Centre, New Garden Town, Lahore, Pakistan</span></li>
+                                <li><i class="fa fa-phone" style="font-size:20px; color:white; margin-right: 20px;"></i><span class="text">+92 42 35851475 & 76 </span></li>
+                                <li><i class="fa fa-envelope" style="font-size:20px; color:white; margin-right: 20px;"></i></span><span class="text">info@visionlogistics.net</span></a></li>
+                            </ul>
+                        </div>
+                        
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+
+    
+    
+   
+    
+
+    
+    
+      
+    <script src="/js/functionality.js"></script>
+</body>
+</html>
