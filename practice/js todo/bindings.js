@@ -15,7 +15,6 @@ function handleAdd(){
     btn1.textContent = "Delete"
     btn1.onclick = handleDelete
     todo.appendChild(li)
-
 };
 
 function handleDelete(e) {

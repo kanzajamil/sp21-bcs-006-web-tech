@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="/css/loginstyles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/latest/jquery.validate.min.js"></script>
+    <script src="/js/validate.js"></script>
+
+    
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form id="commentForm" action="#">
+            <input type="text" name="Full name" id="fullName" placeholder="Full name" />
+            <input type="email" name="Email address" id="email" placeholder="Email address" />
+            <input type="password" name="Password" id="password" placeholder="Password" />
+            <div class="checkbox">
+              <input type="checkbox" id="signupCheck" name="signupCheck" />
+              <label for="signupCheck">I accept all terms & conditions</label>
+            </div>
+            <input type="submit" value="Signup" />
+          </form>
+          
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form id="loginForm" action="#">
+            <input type="text" name="Email address" id="email" placeholder="Email address" required />
+            <input type="password" name="Password" id="password" placeholder="Password" required />
+            <a href="#">Forgot password?</a>
+            <input type="submit" value="Login" />
+          </form>
+          
+      </div>
+
+      
+      
+
+      
+      
+      <script src="/js/animation.js"></script>
+    </section>
+  </body>
+</html>

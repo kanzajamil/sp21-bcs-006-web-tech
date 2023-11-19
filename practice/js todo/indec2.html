@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            #menu {
+                height:50px;
+                background-color: aqua;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                
+
+            }
+            #menu li {
+                
+                margin-left: 20px;
+                list-style-type: none;
+
+            }
+            #menu li.active {
+                right: 0;
+                float: right;
+                
+            }
+            #menu li a{
+                text-decoration: none;
+            }
+            #content {
+                height: 50vh;
+            }
+            .slidebar {
+                margin-right: 60px;
+                float: right;
+                
+            }
+            input{
+                
+                margin-left: 10px;
+            }
+            #loginContent{
+                position: relative;
+                padding-top: 30px;
+                
+            }
+            #submitLoginInfo {
+                position: absolute;
+                top: 0px;
+                left: 10px;
+
+            }
+            #footer {
+                border-top: 1px dashed #000;
+                display: flex;
+                justify-content: space-between;
+            
+            }
+        </style>
+    </head>
+
+
+
+
+
+<body>
+<ul id="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="active"><a href="#about">About</a></li>
+    </ul>
+    <div id="content">
+        <div class="slidebar">sidebar 1</div>
+        <div class="slidebar">sidebar2</div>
+        <div id="loginContent">
+            <input type="text" id="email" placeholder="Enter Email" /> <br />
+            <input type="password" id="password" placeholder="Enter Password" />
+            <br />
+            <button id="submitLoginInfo">Login</button>
+            <p>Please Login</p>
+        </div>
+    </div>
+    <div id="footer">
+        <div>Footer Content</div>
+        <div>Footer Content</div>
+        <div>Footer Content</div>
+        <div>Footer Content</div>
+    </div>
+    </body>
+    </html>

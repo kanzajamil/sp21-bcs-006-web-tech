@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       
+        form {
+
+    width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: lightgray;
+
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+}
+
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"] {
+    width: 70%;
+    padding: 5px 10px;
+}
+
+/* Optional: Style radio and checkbox inputs */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <form>
+        <div><label>Name</label><input type="text" name="name" /></div>
+        <div><label>Email</label><input type="text" name="email" value="" /></div>
+        <div><label>Gender </label><div>
+        <input type="radio" name="gender" value="m" /> Male
+        <input type="radio" name="gender" value="f" /> Female</div></div>
+        <div><label>Subjects </label><div>
+        <input type="checkbox" name="subject" value="OOP" /> OOP
+        <input type="checkbox" name="subject" value="DB" checked /> Database</div> </div>
+        <div><input type="submit" value="Submit"></div>
+        </form>
+</body>
+</html>
