@@ -13,6 +13,7 @@ router.get("/signup", (req, res) => {
 router.get("/logout", (req, res) => {
   //   return res.send(req.query);
   req.session.user = null;
+  req.session.flash = { type: "info", message: "Logged Out" };
   res.redirect("login");
 });
 router.post("/login", async (req, res) => {
@@ -24,10 +25,14 @@ router.post("/login", async (req, res) => {
   const isValid = await bcrypt.compare(password, user.password);
   if (isValid) {
     req.session.user = user;
+    req.session.flash = { type: "success", message: "Logged in Successfully" };
     return res.redirect("/");
 
-  } else 
-  return res.redirect("/login");
+  } else {
+    req.session.flash = { type: "danger", message: "Try Again" };
+
+    return res.redirect("/login");
+  }
   // res.status(400).send({ isValid });
 });
 

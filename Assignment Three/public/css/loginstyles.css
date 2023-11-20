@@ -16,7 +16,7 @@ body {
   background: linear-gradient(white, #83a3be, #5880a2, #2c5d87, #0B1C48);
 }
 .wrapper {
-  margin-top: 100px;
+  padding-top: 100px;
   position: relative;
   height: 400px;
   max-width: 470px;
