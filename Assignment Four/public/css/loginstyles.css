@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(white, #83a3be, #5880a2, #2c5d87, #0B1C48);
+  background: white;
 }
 .wrapper {
   
@@ -35,7 +35,7 @@ body {
       0,
       0.1
     );
-  color: #ddd;
+  color: red;
   overflow: hidden;
 }
 .form.login {
@@ -61,6 +61,7 @@ body {
 .wrapper
   .form.login {
   bottom: -15%;
+  background-color: #A1CAF1;
   border-radius: 35%;
   box-shadow: 0 -5px
     10px rgba(0, 0, 0, 0.1);

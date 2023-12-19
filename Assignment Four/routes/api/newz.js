@@ -48,7 +48,6 @@ router.get("/api/newz/:id", async function (req, res) {
             title: req.body.title,
             detail: req.body.detail,
             imageUrl: result.url,
-            // Other properties from req.body as needed
         });
 
         await news.save();
@@ -59,13 +58,29 @@ router.get("/api/newz/:id", async function (req, res) {
     }
 });
 
-router.get("/news", async function (req, res) {
+/*router.get("/news", async function (req, res) {
     try {
         let newsItems = await News.find();
         res.render('news', { newsItems }); // Render the 'news.ejs' file with the fetched data
     } catch (error) {
         res.status(500).send('Error fetching news');
     }
-});
+});*/
 
-  module.exports = router;
+router.get("/news/:page?", async (req, res) => {
+    let page = req.params.page ? req.params.page : 1;
+    page = Number(page);
+    let pageSize = 2;
+    let newsItems = await News.find()
+      .limit(pageSize)
+      .skip((page - 1) * pageSize);
+    let newsCount = await News.countDocuments();
+    let totalPages = Math.ceil(newsCount / pageSize);
+    res.render("news", {
+      newsItems,
+      page,
+      totalPages,
+    });
+  });
+
+module.exports = router;

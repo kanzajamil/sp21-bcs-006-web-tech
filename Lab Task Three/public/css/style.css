@@ -1,0 +1,794 @@
+
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lobster&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ body{
+    background-color: black;
+    color: black;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center; 
+ }
+
+
+
+
+.navbar.navbar-expand-lg.bg-body-tertiary {
+
+    top:0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: #0B1C48 !important; 
+    align-items: center;
+    justify-content: center;
+} 
+.navbar-nav .nav-link {
+    color: white !important;
+    font-family: Philosopher !important;
+}
+.navbar-brand {
+    color: white !important;
+    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    margin-right: 180px !important;
+    font-family: Philosopher;
+    font-weight: 700;
+}
+.dropdown-menu{
+  z-index: 100 !important;
+  
+ 
+
+}
+.navbar-brand img{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.navbar-nav .nav-link:active {
+    color: aqua !important ;
+}
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: 20px; 
+}
+
+.video-container {
+  
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: black; /* Set the background color to black */
+    transition: background-color 0.5s ease;
+    background-attachment: fixed;
+    
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+     /* Adjust opacity as needed */
+  }
+  
+  .quote-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    animation: fade-in-out 5s infinite;
+    z-index: 3;
+    
+     /* Adjust animation duration as needed */
+}
+
+.quote-text {
+    font-size: 70px; /* Adjust the font size as needed */
+    color: white;
+    margin: 0; 
+    line-height: 1.2;
+    font-family: 'Philosopher';
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    opacity: 0;/* Add vertical spacing between quotes */
+    
+    
+
+    
+}
+
+@keyframes fade-in-out {
+    0%, 100% {
+        opacity: 0;
+    }
+    20%, 80% {
+        opacity: 1;
+    }
+}
+.section-divider {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 110px; /* Adjust the height of the wavy border as needed */
+  z-index: 4;
+
+}
+
+
+.section2 {
+    position: relative;
+    display: flex; /* Use flexbox to arrange elements horizontally */
+    /*align-items: center;  Vertically center-align the elements */
+    background-color: #0B1C48;
+    height: 100vh;
+    width: 100%;   
+  }
+
+  .slogan {
+    margin-right: 20px;
+    margin-left: 30px;
+    width: 630px;
+    height: 400px;
+    margin-top: 65px;
+    
+    z-index: 2;
+    
+    position: relative;
+  }
+
+  .section2 h1{
+    font-family: 'Philosopher';
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    align-self: center;
+    margin-left: 50px;
+    color: #93ebe6;
+    z-index: 1;
+    font-style: italic;
+    /*text-decoration: underline;
+    text-decoration-skip-ink: none;
+    
+    text-shadow: 0 0 10px #26b170;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: lightcyan;
+    -webkit-text-stroke-width: 0.5px;*/
+  
+  }
+  .section2 .slogan p{
+    font-family: Cambria;
+    color:#bdf3f0;
+    font-size: 1.19em;
+    text-align: justify;
+    margin-left: 50px;
+    z-index: 1;
+    font-weight: 100;
+
+  }
+
+  .section-divider2 {
+    position: absolute;
+    /*top: 100%;  Position it just below the video container */
+    
+    bottom:0%;
+    left: 0;
+    width: 100%;
+    height: 120px; /* Adjust the height of the wavy border as needed */
+    z-index: 4;
+  }
+
+  
+  .section2 .globe-container {
+
+    /*align-self: center;*/
+    margin-left: 60px;
+    border: 2px solid transparent;
+    transition: right 0.5s ease;
+    border-radius: 20px; /* You can adjust the border width and color */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+
+  
+
+
+
+@keyframes move {
+  0% {
+      transform: translateY(75) translateX(32);
+  }
+  100% {
+      transform: translateY(80) translateX(160);
+  }
+}
+
+.Section3 {
+   width:100%;
+   height:165vh;
+   box-sizing: border-box;
+   background-color: #ebf5fc;
+   min-height: 160vh;
+   justify-content: center;
+   
+}
+
+.Services {
+
+  font-family: 'Philosopher';
+  font-weight: 700;
+  font-size: 46px;
+  font-weight: bold;
+  color:#0B1C48;
+  
+  text-align: center;
+
+}
+
+.container {
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .flip-card
+{
+  position: relative;
+  min-width: 300px;
+  height: 350px;
+  border-radius: 15px;
+  margin: 30px;
+  perspective: 1000px;
+  
+}
+
+.container .flip-card .flip-card-inner {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom:0px;
+  background: linear-gradient(180deg, skyblue, #0B1C48);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+  /*background: #ebf5fc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);*/
+  border-radius: 15px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-front {
+  border-radius: 20px;
+  
+  
+  color: #ebf5fc ;
+  font-family: 'Philosopher';
+}
+
+/* Style the back side */
+.flip-card-back {
+  background:linear-gradient(180deg, skyblue, #0B1C48);
+
+  border-radius: 20px;
+  font-family: 'Philosopher';
+  color:#0B1C48 ;
+  transform: rotateY(180deg);
+}
+
+
+  
+
+
+.container .flip-card .flip-card-inner .flip-card-front h2 {
+  position: absolute;
+  top:-10px;
+  right: 30px;
+  font-size: 8em;
+  font-family: 'Philosopher';
+  color: rgba(0, 0, 0, 0.05);
+  transition:0.5s;
+  pointer-events: none;
+  
+}
+.container .flip-card .flip-card-inner .flip-card-front img 
+{
+  
+  height:350px;
+  width: 300px;
+  
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.flip-card-front h3{
+  z-index: 2;
+  text-align: center;
+
+}
+
+.flip-card-front .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: large;
+  z-index: 3;
+}
+
+.text-overlay h3 {
+   font-size: 1.7em;
+}
+
+
+.flip-card-back h3
+{
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #0B1C48;
+  z-index:1;
+  transition: 0.5s;
+  font-family: 'Philosopher';
+}
+.flip-card-back p
+{
+  font-size: 1em;
+  font-weight: 300;
+  color: white;
+  z-index:1;
+  text-align: center;
+  margin-right: 27px;
+  margin-left: 27px;
+  
+}
+
+.container .flip-card .flip-card-inner .flip-card-back a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f4;
+  margin-top: 0px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  border-radius: 15px;
+}
+
+.section-divider3 {
+  /*position: absolute;
+  top: 100%;  Position it just below the video container */
+  
+  bottom:0%;
+  left: 0;
+  width: 100%;
+  height: 120px; /* Adjust the height of the wavy border as needed */
+  z-index: 3;
+}
+
+.slogan2 {
+  margin-right: 20px;
+  margin-left: 30px;
+  width: 520px;
+  height: 400px;
+  margin-top: 20px;
+  background-color:#0B1C48;
+  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slogan2 h1{
+  font-family: 'Philosopher';
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  align-self: center;
+  margin-left: 60px;
+  color: #ebf5fc;
+  
+  font-style: italic;
+  
+
+}
+.section4 .slogan2 p{
+  font-family: Cambria;
+  color:#ebf5fc;
+  font-size: 1.19em;
+  text-align: center;
+  margin-left: 50px;
+  z-index: 1;
+  font-weight: 100;
+  line-height: 1.8;
+
+}
+.section4 {
+  
+  /* Use flexbox to arrange elements horizontally */
+  
+  
+  background-color: #0B1C48;
+  height: 100%;
+  width: 100%;   
+}
+
+.section4 .inner{
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+
+.image img {
+    height: 470px; 
+    border-radius: 50%;
+    width: 485px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 4px solid white;
+    padding: 10px;
+}
+.slogan2 a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f4;
+  margin-top: 10px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  align-self: center;
+  justify-content: center;
+  margin-left: 45%;
+}
+.divider4 {
+  
+  /*top: 100%;  Position it just below the video container */
+  
+  bottom:0px;
+  left: 0;
+  width: 100%;
+  height: 130px; /* Adjust the height of the wavy border as needed */
+  z-index: 2;
+}
+
+.section5{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  
+}
+
+.section5 h1{
+  font-family: 'Philosopher';
+  font-weight: 700;
+  font-size: 46px;
+  font-weight: bold;
+  color:#0B1C48;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+
+.section5 .logos{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section5 .logos img{
+  height: 150px;
+  width: 195px;
+  margin: 21px;
+  margin-right: 35px;
+}
+
+.containerlast{
+  background-color: #0B1C48;
+  margin-top: 0px;
+  height: 60vh;
+  color: #ebf5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  
+}
+
+.containerlast .row{
+  margin-right: 0;
+}
+
+
+.footer-heading {
+  font-family: 'Philosopher';
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-heading3{
+  font-family: 'Philosopher';
+  margin-left:25px;
+  margin-bottom: 20px;
+}
+
+
+
+.col-md-6{
+  width: 200px;
+  
+  justify-content: center;
+  margin-left:60px;
+  color: #ebf5fc;
+  
+}
+
+.col-md-6 p{
+  font-family: 'Philospher';
+  margin-left: 50px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.list-unstyled{
+  font-family: 'Philospher';
+  list-style: none;
+  margin-left: 60px;
+  color: #ebf5fc;
+}
+
+.list-unstyled li {
+  color: #ebf5fc;
+  text-decoration: none;
+  
+}
+
+.list-unstyled a {
+  color: #ebf5fc;
+  text-decoration: none;
+  
+}
+
+.custom-list{
+  list-style: none;
+}
+
+.custom-list li{
+  margin-top: 10px;
+}
+
+.ftco-footer-social {
+  margin-left: 30px;
+}
+.ftco-footer-social li{
+  margin-left: 20px;
+  display: inline;
+  list-style: none;
+}
+
+.with-line {
+  position: relative;
+}
+
+.with-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 50%;
+  height: 3px; 
+  background-color: #03a9f4;
+}
+
+.flashing{
+  align-self: center;
+  padding-top: 75px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  width:470px;
+}
+
+.start-container{
+  position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+   /* Set the background color to black */
+   
+}
+.start-container img{
+
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+
+}
+
+.overlaypicture{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 28, 72, 0.6);
+    z-index: 2;
+
+}
+
+.starttext-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 4;
+}
+
+.start-text{
+  font-size: 70px; /* Adjust the font size as needed */
+    color: white;
+    margin: 0; 
+    line-height: 1.2;
+    font-family: 'Philosopher';
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    
+
+}
+
+.image-block {
+  position: relative;
+  background-color:#fff;
+  min-width: 550px;
+  height: 425px;
+  border: 1px solid #0B1C48;
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.image-block img {
+  width: 550px;
+  height: 300px;
+  padding: 15px;
+  border-radius: 25px;
+  
+  
+}
+
+.text-block {
+  position: absolute;
+  color:#0B1C48;
+  padding-left: 20px;
+}
+
+.text-block h3 , .text-block p{
+  font-family: 'Philosopher';
+  font-weight: bold;
+}
+
+.buttonapi{
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+
+.api-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  
+}
+
+.pageclass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #0B1C48;
+
+}
+
+.page-item.active-page{
+  color: #0B1C48 !important; 
+}
+
+.cardscss{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

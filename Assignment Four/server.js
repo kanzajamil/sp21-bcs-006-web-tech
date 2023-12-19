@@ -1,12 +1,14 @@
 let express = require("express");
 let cookieParser = require("cookie-parser");
 var session = require("express-session");
+var expressLayouts = require("express-ejs-layouts");
 let app = express();
 
 const fileUpload = require("express-fileupload");
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+app.use(expressLayouts);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -14,9 +16,11 @@ app.use(session({ secret: "Shh, its a secret!" ,resave: true,
 saveUninitialized: true}));
 app.use(require("./middlewares/common"));
 
-const maintenance = require("./middlewares/maintenance");
+
 const logger = require("./middlewares/logger");
 const sessionauth = require("./middlewares/sessionauth");
+const admin = require("./middlewares/admin");
+
 
 app.get("/views", (req, res) => {
   let visits = req.cookies.visits;
@@ -31,18 +35,29 @@ app.use(fileUpload({
   useTempFiles : true,
 }));
 
+
 app.use("/", require("./routes/site/auth"));
+
+app.use("/admin", sessionauth, admin, require("./routes/admin/newz"));
 
 let newsapirouter = require("./routes/api/newz");
 
 app.use(newsapirouter);
-
-
-
-
+let membersapirouter = require("./routes/api/members");
+app.use(membersapirouter);
 app.get("/", function (req, res) {
   res.render("index");
 });
+
+app.get("/admin", function (req, res) {
+  res.render("admin");
+});
+
+
+app.get("/about", function (req, res) {
+  res.render("about");
+});
+
 
 app.get("/news", function (req, res) {
   res.render("news");

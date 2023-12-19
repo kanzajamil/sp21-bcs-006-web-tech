@@ -1,6 +1,16 @@
 const express = require("express");
 let router = express.Router();
 let User = require("../../models/user");
+const jwt = require("jsonwebtoken");
+
+const generateToken = (user) => {
+  return jwt.sign({
+    id : user.id,
+    email : user.email},
+    'myuser',
+    {expiresIn : 8640000}
+  )
+}
 
 router.get("/login", (req, res) => {
   //   return res.send(req.query);
@@ -14,6 +24,7 @@ router.get("/logout", (req, res) => {
   //   return res.send(req.query);
   req.session.user = null;
   req.session.flash = { type: "info", message: "Logged Out" };
+  res.clearCookie('token');
   res.redirect("login");
 });
 router.post("/login", async (req, res) => {
@@ -26,6 +37,9 @@ router.post("/login", async (req, res) => {
   if (isValid) {
     req.session.user = user;
     req.session.flash = { type: "success", message: "Logged in Successfully" };
+    const token = generateToken(user);
+    res.cookie("token",token);
+    console.log('Generated Token:', token);
     return res.redirect("/");
 
   } else {

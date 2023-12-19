@@ -1,0 +1,11 @@
+
+    <%- include('./partials/top-menu') %>
+    <h1>API FOR ASSIGNMENT PURPOSE</h1>
+
+    <% for( let index = 0; index < members.length; index++ ) { %>
+        <div>
+            <h5><%= members[index].name %></h5>
+            <p><%= members[index].designation %></p>
+        </div>
+        <% } %>
+        
