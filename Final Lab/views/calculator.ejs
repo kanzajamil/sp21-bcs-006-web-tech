@@ -1,0 +1,41 @@
+<%- include('./partials/top-menu') %>
+    
+<section class="wrapper">
+    <div class="form login">
+        <header>Calculator</header>
+        <form id="calculatorForm" action="/calculate" method="post">
+            <input type="text" name="operand1" id="operand1" placeholder="First operand" required pattern="[0-9]*" />
+            <select name="operation" id="operation" required>
+                <option value="">Select Operation</option>
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <input type="text" name="operand2" id="operand2" placeholder="Second operand" required pattern="[0-9]*" />
+            <input type="submit" value="Calculate" />
+        </form>
+    </div>
+</section>
+
+<% if (calculations.length > 0) { %>
+    <h2>Previous Calculations</h2>
+    <table border="1">
+        <tr>
+            <th>Operand 1</th>
+            <th>Operand 2</th>
+            <th>Operation</th>
+            <th>Result</th>
+        </tr>
+        <% calculations.forEach(calculation => { %>
+            <tr>
+                <td><%= calculation.operand1 %></td>
+                <td><%= calculation.operand2 %></td>
+                <td><%= calculation.operation %></td>
+                <td><%= calculation.result %></td>
+            </tr>
+        <% }) %>
+    </table>
+<% } else { %>
+    <p>No calculations yet.</p>
+<% } %>
